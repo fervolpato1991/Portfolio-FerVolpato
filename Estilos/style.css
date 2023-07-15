@@ -13,7 +13,7 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #5d2dfa;
+    --main-color: #00189e;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -41,6 +41,7 @@ body{
     background: var(--bg-color);
     box-shadow: 0 .1rem .1rem var(--shadow-color);
 }
+
 .logo {
     font-size: 2.5rem;
     color: var(--main-color);
