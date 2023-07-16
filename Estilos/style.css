@@ -48,13 +48,18 @@ body{
     font-weight: 600;
     cursor: default;
     margin-right: auto;
+    animation: slideright 1s ease forwards;
 }
 .navbar a {
+    display:inline-flex;
     font-size: 1.7rem;
     color: var(--white-color);
     font-weight: 500;
     margin-right: 3.5rem;
     position: relative;
+    transition: color 0.3s ease;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 2.5s;
 }
 .header.sticky .navbar a {
     color: var(--text-color);
@@ -62,28 +67,7 @@ body{
 .header.sticky .navbar a.active {
     color: var(--main-color);
 }
-.navbar a.active::before {
-    content:'';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: .2rem;
-    background: var(--white-color);
-    bottom: -6px;
-}
-.header.sticky .navbar a::before {
-    background: var(--main-color);
-    opacity: .7;
-}
-#darkMode-icon {
-    font-size: 2.4rem;
-    color: var(--white-color);
-    cursor: pointer;
-}
-.header.sticky #darkMode-icon {
-    color: var(--text-color);
-    opacity: .9;
-}
+
 section {
     min-height: 100vh;
     padding: 10rem 7% 2rem;
@@ -99,14 +83,20 @@ section {
     font-size: 3.2rem;
     font-weight: 700;
     line-height: .3;
+    animation: slideright 1s ease forwards;
+    animation-delay: 0.5s;
 }
 .home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: .3rem;
+    animation: slideright 1s ease forwards;
+    animation-delay: 0.7s;
 }
 .home-content p {
     font-size: 1.6rem;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 0.7s;
 }
 .home-content .social-media a {
     display: inline-flex;
@@ -118,6 +108,8 @@ section {
     border: .2rem solid var(--main-color);
     margin: 2.5rem 1.5rem 3rem 0;
     transition: .5s ease;
+    animation: slideleft 1s ease forwards;
+    animation-delay: calc(0.2s *var(--i));
 }
 .home-content .social-media a:hover{
     background: var(--main-color);
@@ -135,6 +127,8 @@ section {
     font-weight: 600;
     transition: .5s ease;
     border: .2rem solid transparent;
+    animation: slidetop 1s ease forwards;
+    animation-delay: 1s;
 }
 .btn:hover {
     background: transparent;
@@ -178,11 +172,6 @@ section {
     margin-right: 15px;
 }
 
-/* Para futuras profesiones */
-.home .profession-box .profession:nth-child(2), 
-.home .profession-box .profession:nth-child(4) {
-    padding-bottom: 20px;
-}
 .home .profession i {
     font-size: 3.8rem;
 }
@@ -192,10 +181,10 @@ section {
     font-weight: 600;
 }
 .home .profession-box .circle {
-    width: 560px;
-    height: 560px;
-    border: 3px solid var(--main-color); 
-    border-radius: 50%; 
+    width: 1200px;
+    height: 1200px;
+    border: 150px solid var(--main-color); 
+    border-radius: 00%; 
 }
 .home .profession-container .overlay {
     position: absolute;
@@ -216,6 +205,8 @@ section {
     height: 25rem;
     width: 25rem;
     border-radius: 25%;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 2.3s;
   }
 span {
     color: var(--main-color);
@@ -335,4 +326,85 @@ span {
 }
 .contact form .input-box input {
     width: 49%;
+}
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+    .home .profession-container {
+        height: 85.8rem;
+    }
+    .home .profession-container .profession-box {
+        right: -12rem;
+        height: 85.8rem;
+    }
+    .home .profession-container .overlay {
+        right: -9rem;
+    }
+}
+@media (max-width: 1024px) {
+    .header {
+        padding: 2rem 3%;
+    }
+    section {
+        padding: 10rem 3% 2rem;
+    }
+    .home .profession-container .profession-box {
+        right: -22rem;
+    }
+    .home .profession-container .overlay {
+        right: -15rem;
+    }
+}
+@media (max-width: 991px) {
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2) {
+        color: var(--main-color);
+    }
+    .navbar a.active::before {
+        background: var(--main-color);
+        opacity: .7;
+    }
+    .home .home-content {
+        max-width: 50rem;
+    }
+    .home .profession-container .profession-box {
+        right: -45rem;
+    }
+    .home .profession-container .overlay {
+        right: -39.5rem;
+    }
+    .home-img img {
+        display: none;
+    }
+}
+@keyframes slideright {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX('0');
+    }
+}
+@keyframes slideleft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX('angle');
+    }
+}
+@keyframes slidetop {
+    0% {
+        opacity: 0;
+        transform: rotateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
