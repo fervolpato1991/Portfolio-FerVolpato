@@ -378,6 +378,17 @@ span {
         display: none;
     }
 }
+@media (max-width: 500px) {
+
+    .navbar a {
+        color: var(--main-color);
+        right: -5rem;
+    }
+
+    .profession-container {
+        display: none;
+    }
+}
 @keyframes slideright {
     0% {
         opacity: 0;
