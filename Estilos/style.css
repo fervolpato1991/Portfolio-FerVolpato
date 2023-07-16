@@ -57,20 +57,23 @@ body{
     font-weight: 500;
     margin-right: 3.5rem;
     position: relative;
-    transition: color 0.3s ease;
     animation: slideleft 1s ease forwards;
     animation-delay: 2.5s;
 }
+
 .header.sticky .navbar a {
     color: var(--text-color);
 }
 .header.sticky .navbar a.active {
     color: var(--main-color);
+    
 }
 
 section {
     min-height: 100vh;
     padding: 10rem 7% 2rem;
+    border-bottom: 15px solid var(--main-color);
+    padding-top: 20px; /* Espacio adicional arriba de cada sección */
 }
 .home {
     display: flex;
@@ -81,6 +84,7 @@ section {
 }
 .home .home-content h3 {
     font-size: 3.2rem;
+    margin-bottom: .2rem;
     font-weight: 700;
     line-height: .3;
     animation: slideright 1s ease forwards;
@@ -89,7 +93,6 @@ section {
 .home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
-    margin-bottom: .3rem;
     animation: slideright 1s ease forwards;
     animation-delay: 0.7s;
 }
@@ -107,6 +110,7 @@ section {
     background: transparent;
     border: .2rem solid var(--main-color);
     margin: 2.5rem 1.5rem 3rem 0;
+    border-radius: 25%;
     transition: .5s ease;
     animation: slideleft 1s ease forwards;
     animation-delay: calc(0.2s *var(--i));
@@ -341,6 +345,9 @@ span {
     .home .profession-container .overlay {
         right: -9rem;
     }
+    .home-img img {
+        right: -5rem;
+    }
 }
 @media (max-width: 1024px) {
     .header {
@@ -378,14 +385,25 @@ span {
         display: none;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
 
     .navbar a {
         color: var(--main-color);
         right: -5rem;
     }
-
     .profession-container {
+        display: none;
+    }
+    .navbar {
+        display:flex;
+        flex-direction: column;
+        margin: .5rem .5rem .5rem .5rem;
+        border-radius: 15%;
+    }
+    .portfolio-layer h4 {
+        font-size: 2rem;
+    }
+    .portfolio-layer p {
         display: none;
     }
 }
