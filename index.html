@@ -199,15 +199,15 @@
 
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Nombre completo"/>
-                <input type="email" placeholder="Correo electrónico"/>
+                <input type="text" id="nombre" placeholder="Nombre completo"/>
+                <input type="email" id="correo" placeholder="Correo electrónico"/>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Número de teléfono móvil"/>
-                <input type="text" placeholder="Asunto del email"/>
+                <input type="number" id="telefono" placeholder="Número de teléfono móvil"/>
+                <input type="text" id="asunto" placeholder="Asunto del email"/>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
-            <input type="submit" value="Enviar Mensaje" class="btn"/>
+            <textarea id="mensaje" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+            <input type="submit" value="Enviar Mensaje" class="btn" onclick="enviarMensaje(event)"/>
         </form>
     </section>
     
