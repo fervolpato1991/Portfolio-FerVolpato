@@ -13,20 +13,21 @@
         <a href="#" class="logo">Portfolio</a>
 
         <nav class="navbar">
-            <a href="#home" class="active">Inicio</a>
-            <a href="#about">Sobre mí</a>
-            <a href="#skills">Habilidades</a>
-            <a href="#projects">Proyectos</a>
-            <a href="#contact">Contáctame</a>
+            <a href="#home" class="active" id="Inicio">Inicio</a>
+            <a href="#about" id="Sobremí">Sobre mí</a>
+            <a href="#skills" id="Habilidades">Habilidades</a>
+            <a href="#projects" id="Proyectos">Proyectos</a>
+            <a href="#contact" id="Contáctame">Contáctame</a>
+            <a id="Idioma" class="idioma" onclick="cambiarIdioma()">Idioma</a>
         </nav>
 
     </header>
     
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hola!, soy</h3>
+            <h3 id="titulo">Hola!, soy</h3>
             <h1>Fernando Volpato</h1>
-            <p>Desarrollador Web Full Stack</p>
+            <p id="parrafo">Desarrollador Web Full Stack</p>
 
             <div class="social-media">
                 <a href="https://www.facebook.com/fernando.volpato.1/" style="--i:7;"><i class="bx bxl-facebook"></i></a>
@@ -35,14 +36,14 @@
                 <a href="https://www.linkedin.com/in/fernando-volpato-5bb718217/" style="--i:10;"><i class="bx bxl-linkedin"></i></a>
             </div>
 
-            <a href="./images/curriculum-vitae Fernando.pdf" class="btn">Descarga mi CV</a>
+            <a href="./images/curriculum-vitae Fernando.pdf" class="btn" id="btn">Descarga mi CV</a>
         </div>
 
         <div class="profession-container">
             <div class="profession-box">
                 <div class="profession" style="--i:0;">
                     <i class="bx bx-code-curly"></i>
-                    <h3>Desarrollador Web</h3>
+                    <h3 id="Web">Desarrollador Web</h3>
                 </div>
 
                 <div class="circle"></div>
@@ -54,6 +55,7 @@
             </div>
         </div>
     </section>
+
     <!-- sección Sobre mí -->
     <section class="about" id="about">
         <div class="about-img">
@@ -61,9 +63,9 @@
         </div>
 
         <div class="about-content">
-            <h2 class="heading" data-spanish="Sobre mí" data-english="About Me">Sobre <span>mí</span></h2>
-            <h3 >Hola!, te cuento un poco de mi para que me conozcas!</h3>
-            <p>Nací en Dolores, Buenos Aires, Argentina
+            <h2 class="heading" id="abouttitle">Sobre <span >mí</span></h2>
+            <h3 id="abouthead">Hola!, te cuento un poco de mi para que me conozcas!</h3>
+            <p id="abouttext">Nací en Dolores, Buenos Aires, Argentina
                 en Septiembre de 1991. Soy una Persona que le gusta
                 la computación, trabajar en grupos y estar siempre ayudando
                 en lo que se necesite, me considero alguien responsable, dedicado, que le encantar participar en trabajos de equipo, y
@@ -74,14 +76,14 @@
     <!-- sección Habilidades -->
 
     <section class="portfolio" id="skills">
-        <h2 class="heading">Habili<span>dades</span></h2>
+        <h2 class="heading" id="skillstitle">Habili<span>dades</span></h2>
         <div class="portfolio-container">
         <div class="portfolio-box">
             <img src="https://i.pinimg.com/564x/92/c3/19/92c319fa4d460a04a2fae5ee2e8f0649.jpg" alt="HTML">
 
             <div class="portfolio-layer">
                 <h4>HTML</h4>
-                <p>Es un estándar que sirve define una estructura básica y un código para el contenido de una página web, como texto, imágenes, videos, juegos, entre otros.</p>
+                <p id="html">Es un estándar que sirve define una estructura básica y un código para el contenido de una página web, como texto, imágenes, videos, juegos, entre otros.</p>
                 <a href="https://es.wikipedia.org/wiki/HTML"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -90,7 +92,7 @@
 
             <div class="portfolio-layer">
                 <h4>CSS</h4>
-                <p>Es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML (en-US).</p>
+                <p id="css">Es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML (en-US).</p>
                 <a href="https://es.wikipedia.org/wiki/CSS"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -99,7 +101,7 @@
 
             <div class="portfolio-layer">
                 <h4>Javascript</h4>
-                <p>Un lenguaje de programación que se define como orientado a objetos,​ basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+                <p id="Javascript">Un lenguaje de programación que se define como orientado a objetos,​ basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
                 <a href="https://es.wikipedia.org/wiki/JavaScript"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -108,7 +110,7 @@
 
             <div class="portfolio-layer">
                 <h4>React</h4>
-                <p>Es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página</p>
+                <p id="React">Es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página.</p>
                 <a href="https://react.dev/"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -117,7 +119,7 @@
 
             <div class="portfolio-layer">
                 <h4>Redux</h4>
-                <p>Es una librería JavaScript de código abierto para el manejo del estado de las aplicaciones</p>
+                <p id="Redux">Es una librería JavaScript de código abierto para el manejo del estado de las aplicaciones.</p>
                 <a href="https://redux.js.org/"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -126,7 +128,7 @@
 
             <div class="portfolio-layer">
                 <h4>Express</h4>
-                <p>Es un entorno de trabajo de aplicaciones web para Node.js, de código abierto. Se utiliza para desarrollar aplicaciones web y APIs.</p>
+                <p id="Express">Es un entorno de trabajo de aplicaciones web para Node.js, de código abierto. Se utiliza para desarrollar aplicaciones web y APIs.</p>
                 <a href="https://expressjs.com/"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -135,7 +137,7 @@
 
             <div class="portfolio-layer">
                 <h4>PostreSQL</h4>
-                <p>Es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto.</p>
+                <p id="PostreSQL">Es un sistema de gestión de bases de datos relacional orientado a objetos y de código abierto.</p>
                 <a href="https://github.com/fervolpato1991/Rick_and_Morty"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -144,7 +146,7 @@
 
             <div class="portfolio-layer">
                 <h4>Tailwind</h4>
-                <p>Es un framework de CSS de código abierto​ para el diseño de páginas web.</p>
+                <p id="Tailwind">Es un framework de CSS de código abierto​ para el diseño de páginas web.</p>
                 <a href="https://github.com/fervolpato1991/Rick_and_Morty"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -153,7 +155,7 @@
 
             <div class="portfolio-layer">
                 <h4>Trello</h4>
-                <p>Es un software de administración de proyectos con interfaz web y con cliente para iOS y android para organizar proyectos.​</p>
+                <p id="Trello">Es un software de administración de proyectos con interfaz web y con cliente para iOS y android para organizar proyectos.​</p>
                 <a href="https://trello.com/home"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -161,14 +163,14 @@
     </section>
 
     <section class="portfolio" id="projects">
-        <h2 class="heading">Mis <span>Proyectos</span></h2>
+        <h2 class="heading" id="Projectstitle">Mis <span>Proyectos</span></h2>
         <div class="portfolio-container">
         <div class="portfolio-box">
             <img src="https://firebasestorage.googleapis.com/v0/b/lobbylair-pf.appspot.com/o/Logo.webp?alt=media&token=ea0389a0-f0d5-4d8b-a9b4-c11af490c453" alt="LobbyLair">
 
             <div class="portfolio-layer">
                 <h4>Lobby Lair</h4>
-                <p>Red social para gamers donde los jugadores pueden encontrarse en tiempo real, socializar y unirse a otras partidas.</p>
+                <p id="LobbyLair">Red social para gamers donde los jugadores pueden encontrarse en tiempo real, socializar y unirse a otras partidas.</p>
                 <a href="https://lobbylair-gkallisti.vercel.app/"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -177,7 +179,7 @@
 
             <div class="portfolio-layer">
                 <h4>Henry pi-dogs</h4>
-                <p>Proyecto individual de henry sobre distintas razas de perros, sus pesos, alturas y esperanzas de vida</p>
+                <p id="Dogs">Proyecto individual de henry sobre distintas razas de perros, sus pesos, alturas y esperanzas de vida.</p>
                 <a href="https://barkers.vercel.app/"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -186,7 +188,7 @@
 
             <div class="portfolio-layer">
                 <h4>Rick and Morty</h4>
-                <p>App donde se muestran todos los personajes de la serie, asi como tambien sus distintas caracteristicas.</p>
+                <p id="Rick">App donde se muestran todos los personajes de la serie, asi como tambien sus distintas caracteristicas.</p>
                 <a href="https://github.com/fervolpato1991/Rick_and_Morty"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
@@ -194,7 +196,7 @@
     </section>
 
     <section class="contact" id="contact">
-        <h2 class="heading">Contácta<span>me</span></h2>
+        <h2 class="heading" id="Contactme">Contácta<span>me</span></h2>
 
         <form action="#">
             <div class="input-box">
@@ -206,7 +208,7 @@
                 <input type="text" id="asunto" placeholder="Asunto del email"/>
             </div>
             <textarea id="mensaje" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
-            <input type="submit" value="Enviar Mensaje" class="btn" onclick="enviarMensaje(event)"/>
+            <input type="submit" id="enviar" value="Enviar Mensaje" class="btn" onclick="enviarMensaje(event)"/>
         </form>
     </section>
     

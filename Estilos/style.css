@@ -11,7 +11,7 @@
     scroll-behavior: smooth;
 }
 :root {
-    --bg-color: #fdfdfd;
+    --bg-color: #ebebeb;
     --text-color: #333;
     --main-color: #00189e;
     --white-color: #fdfdfd;
@@ -55,7 +55,7 @@ body{
     font-size: 1.7rem;
     color: var(--white-color);
     font-weight: 500;
-    margin-right: 3.5rem;
+    margin-right: 3rem;
     position: relative;
     animation: slideleft 1s ease forwards;
     animation-delay: 2.5s;
@@ -114,6 +114,9 @@ section {
     transition: .5s ease;
     animation: slideleft 1s ease forwards;
     animation-delay: calc(0.2s *var(--i));
+}
+.idioma {
+    cursor: pointer;
 }
 .home-content .social-media a:hover{
     background: var(--main-color);
