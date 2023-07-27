@@ -387,20 +387,26 @@ span {
     .home-img img {
         display: none;
     }
+
+    .logo {
+        display: none;
+    }
 }
-@media (max-width: 650px) {
+@media (max-width: 600px) {
+
+    .logo {
+        display: none;
+    }
 
     .navbar a {
+        display: inline-flex;
         color: var(--main-color);
-        right: -5rem;
     }
     .profession-container {
         display: none;
     }
     .navbar {
         display:flex;
-        flex-direction: column;
-        margin: .5rem .5rem .5rem .5rem;
         border-radius: 15%;
     }
     .portfolio-layer h4 {
